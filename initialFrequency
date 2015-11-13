@@ -1,7 +1,4 @@
 //GIVEN AN ARRAY OF NAMES, OUTPUT THE FREQUENCY AT WHICH EACH INITIAL OCCURS
-function caluculateRates() {
-   
-}
 
 function outputNameRates (namesArray) {
 	initials = {};
