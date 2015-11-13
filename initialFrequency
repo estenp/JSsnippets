@@ -1,0 +1,34 @@
+//GIVEN AN ARRAY OF NAMES, OUTPUT THE FREQUENCY AT WHICH EACH INITIAL OCCURS
+function caluculateRates() {
+   
+}
+
+function outputNameRates (namesArray) {
+	initials = {};
+    initialSum = 0;
+    for (i = 0; i < namesArray.length; i++){
+        //get the first letter in the name
+    	initial = names[i].charAt(0);
+
+        //if initial doesn't exist in initials array, add to array
+        if (typeof initials[initial] == 'undefined') {
+            initials[initial] = 0;
+        }
+		
+        //add 1 occurance to the array
+        initials[initial] = initials[initial] + 1;
+        initialSum = initialSum + 1;
+        
+    }
+	
+    for (var key in initials){
+       //calculate the percentage of each letter's occurrence
+       var perc = (initials[key] / initialSum) * 100;
+	   console.log(perc+'% of names start with: '+key);
+    }
+          
+}
+
+names = ['Ted', 'Josh', 'Toby', 'Bill', 'Austin', 'Tim'];
+
+outputNameRates(names);
