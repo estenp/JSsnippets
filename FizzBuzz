@@ -6,6 +6,8 @@ for (i = 1; i <=100; i++) {
     if (i % 5 === 0) {
     	value = value+'Buzz';
     }
-    
-    		document.getElementById('div').insertAdjacentHTML('beforeend', '<div>'+i+': '+value+'</div>');
+    if (value === '') {
+    	value = i;
+	}
+    		document.getElementById('div').insertAdjacentHTML('beforeend', '<div>'+value+'</div>');
 }
