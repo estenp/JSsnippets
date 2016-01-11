@@ -1,0 +1,17 @@
+function StairCase(n) {
+    for (i=1; i <= n; i++) {
+        var spaces = n - i;
+        for (x=1; x<=spaces; x++) {
+            document.write("&nbsp;&nbsp;");
+        }
+        for (x=1; x<=i; x++) {
+            document.write("#");
+        }      
+        
+        document.write("<br>");
+    }
+  
+
+}
+
+StairCase(6);
