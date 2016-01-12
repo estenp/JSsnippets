@@ -14,4 +14,22 @@ function StairCase(n) {
 
 }
 
+
+function StairCase(n) {
+    for (i=1; i <= n; i++) {
+        var spaces = n - i;
+        var rowStr = "";
+        for (x=1; x<=spaces; x++) {
+            
+            var rowStr = rowStr + " ";
+        }
+        for (x=1; x<=i; x++) {
+            
+            var rowStr = rowStr + "#";
+        }      
+        
+        console.log(rowStr);
+    }
+}
+
 StairCase(6);
